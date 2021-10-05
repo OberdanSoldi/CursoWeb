@@ -24,16 +24,31 @@
 
 // console.log(objt2)
 
-{
-    let valor = 1;
-    console.log(valor);
-    {
-        let valor = 2;
-        console.log(valor);
-        {
-            let valor = 3;
-            console.log(valor);
-        }
+// {
+//     let valor = 1;
+//     console.log(valor);
+//     {
+//         let valor = 2;
+//         console.log(valor);
+//         {
+//             let valor = 3;
+//             console.log(valor);
+//         }
+//     }
+// }
+// console.log(valor);
+
+function tratarerro(error){
+    throw new Error('...');
+}
+
+function gritando(obj) {
+    try{
+        console.log(obj.nome.toUpperCase() + '!!!');
+    }catch(error){
+        tratarerro(error)
     }
 }
-console.log(valor);
+
+const obj = { nome: 'Carlos' }
+gritando(obj)
