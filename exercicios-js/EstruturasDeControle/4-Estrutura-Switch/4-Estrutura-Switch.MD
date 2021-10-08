@@ -1,30 +1,34 @@
-# Estrutura IF e ELSE IF no JavaScript
+# Estrutura Switch no JavaScript
 
-Estrutura IF e ELSE IF no JavaScript
+Estrutura Switch no JavaScript
 
 Exemplos:
 
 ```js
-Number.prototype.entre = (inicio. fim) => {
-    return this >= inicio && this <=fim;
-};
-
 const imprimirResultado = (nota) => {
-    if(nota.entre(9, 10)) {
+    switch (Math.floor(nota)) {
+    case 10: case 9:
         console.log('Quadro de honra');
-    } else if(nota.entre(7, 8.99)) {
+      break;
+    case 8: case 7:
         console.log('Aprovado');
-    } else if(nota.entre(4, 6.99)) {
+      break;
+    case 6: case 5: case 4:
         console.log('Recuperação');
-    } else if(nota.entre(0, 3.99)) {
+      break;
+    case 3: case 2: case 1: case 0:
         console.log('Reprovado');
-    } else {
+      break;
+    default:
         console.log('Nota inválida');
-    }
-};
+      break;
+  }
+}
 
 imprimirResultado(10);
 imprimirResultado(8.9);
 imprimirResultado(6.55);
 imprimirResultado(2.3);
+imprimirResultado(-1);
+imprimirResultado(11);
 ```
