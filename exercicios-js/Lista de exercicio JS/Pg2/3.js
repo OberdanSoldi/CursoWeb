@@ -1,1 +1,3 @@
-const repetir = ()
+const repetir = (elementoQueRepete, quantidadeDeRepeticao) => {
+
+}
