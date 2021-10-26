@@ -38,17 +38,28 @@
 // }
 // console.log(valor);
 
-function tratarerro(error){
-    throw new Error('...');
-}
+// function tratarerro(error){
+//     throw new Error('...');
+// }
+//
+// function gritando(obj) {
+//     try{
+//         console.log(obj.nome.toUpperCase() + '!!!');
+//     }catch(error){
+//         tratarerro(error)
+//     }
+// }
+//
+// const obj = { nome: 'Carlos' }
+// gritando(obj)
 
-function gritando(obj) {
-    try{
-        console.log(obj.nome.toUpperCase() + '!!!');
-    }catch(error){
-        tratarerro(error)
-    }
-}
+const notas = {
+    nota1: 7.1,
+    nota2: 5.6,
+    nota3: 7.8,
+    nota4: 9.1
+};
 
-const obj = { nome: 'Carlos' }
-gritando(obj)
+for(nota in notas) {
+    console.log(`${nota}, ${notas[nota]}`);
+}
