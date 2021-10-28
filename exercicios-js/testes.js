@@ -53,13 +53,25 @@
 // const obj = { nome: 'Carlos' }
 // gritando(obj)
 
-const notas = {
-    nota1: 7.1,
-    nota2: 5.6,
-    nota3: 7.8,
-    nota4: 9.1
-};
+// const notas = {
+//     nota1: 7.1,
+//     nota2: 5.6,
+//     nota3: 7.8,
+//     nota4: 9.1
+// };
+//
+// for(nota in notas) {
+//     console.log(`${nota}, ${notas[nota]}`);
+// }
 
-for(nota in notas) {
-    console.log(`${nota}, ${notas[nota]}`);
+function remainder(x, y) {
+    return  console.log(x % y);
 }
+
+remainder(1, 3)
+
+function howManySeconds(hours) {
+    return  console.log(hours * 3600)
+}
+
+howManySeconds(2)
